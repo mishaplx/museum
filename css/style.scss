@@ -65,18 +65,15 @@ a:hover{
     display: flex;
     justify-content: space-between;
     li{
+        margin-right: 76px;
         list-style: none;
         a{
-            
-            margin-right: 76px;
             @include font(normal, 200, 22px, 50px, 2px, white);
         }
-        
-        
 
     }
     li:last-child{
-        margin: 0px;
+        margin-right: 0px;
     }
     
 }
@@ -367,6 +364,9 @@ margin-bottom: 76px;
     text-align: center;
 
 }
+.btn__buy:hover{
+    background: #9d8665;
+}
 }
 
 .Contacts{
@@ -425,12 +425,28 @@ margin-bottom: 76px;
                 .contact__list{
                     display: flex;
                 flex-direction: column;
+                @include font(normal, 200, 22px, 56px, 2px, white);
+                font-family: 'Roboto',serif;
+                margin-right: 153px;
+
+            }
+            :last-child{
+                margin-right: 0px;
             }
          }
          
          }
          .footer__flex__item__social{
             align-self: flex-end;
+            .social{
+                a{
+                    margin-right: 24px;
+
+                }
+                :last-child{
+                    margin-right: 24px;
+                }
+            }
          }
      }
         .logo{
