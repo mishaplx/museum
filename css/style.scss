@@ -1,12 +1,13 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    box-sizing: border-box;
-}
+@import url(../css/nullstyle.css);
 body{
     font-family: 'Roboto', sans-serif;
     
+}
+a:active{
+    color: #9d8665;
+}
+a:hover{
+    color: #9d8665;
 }
 @mixin font ( $fstyle, $fw, $fsize, $lh, $ls, $color) {
     font-style: $fstyle;
@@ -26,7 +27,6 @@ body{
 
 .header{
     max-height: 100%;
-    height: 200px;
     background-color: rgba(3, 3, 3, 1);
     padding: 74px 0px;
     
@@ -40,13 +40,12 @@ body{
         margin: auto;
     }
     .logo{
-        display: flex;
-        align-items: center;
+        
         .logo__svg{
-            background-image: url(../images/logo.svg);
-            background-repeat: no-repeat;
-            width: 50px;
-            height: 34px;
+            background-image: url(../images/svg/logo.svg);
+            width: 49px;
+            height: 26px;
+            display: inline-block;
             margin-right: 20px;
             
     
@@ -62,13 +61,17 @@ body{
     
     
 }
-ul{
+.nav__flex{
     display: flex;
     justify-content: space-between;
     li{
         list-style: none;
-        margin-right: 76px;
-        @include font(normal, 200, 22px, 50px, 2px, white);
+        a{
+            
+            margin-right: 76px;
+            @include font(normal, 200, 22px, 50px, 2px, white);
+        }
+        
         
 
     }
@@ -80,34 +83,47 @@ ul{
 .Welcome{
     background: black;
     padding-top: 114px;
+    position: relative;
     
+    .img__main{
+        position: absolute;
+        top: -2px;
+        right: 0px;
+        
+    }
     .welcome__container{
         margin-bottom: 75px;
       
 h1{
+    position: relative;
     font-family: 'Forum', cursive;
     @include font(normal, normal, 80px, 90px, 5px, white);
     text-transform: uppercase;
     margin-bottom: 26px;
-    order: 100;
+    z-index: 10;
 }
 p{
     @include font(normal, 300, 28px, 33px, 2px, white);
 margin-bottom: 76px;
 
 }
-button{
+.discover__btn{
+    border-radius: 3px;
     background: rgba(113, 7, 7, 1);
     width: 360px;
     height: 75px;
     padding: 10px;
     margin-bottom: 246px;
     .title__button{
+        font-family: 'Roboto', serif;
         margin: 0px;
         @include font(normal, 200, 22px, 26px, 2px, white); 
     }
+    
 }
-
+.discover__btn:hover{
+    background: #9d8665;
+}
     }
     .backgroung__main{
         position: absolute;
@@ -116,7 +132,9 @@ button{
     }
 }
 
-
+.Visiting{
+    padding-bottom: 75px;
+}
 .visiting__container{
     
     .visiting__title{
@@ -138,19 +156,27 @@ button{
     }
 .card__grid{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 422px ;
+    grid-template-columns: 422px 422px 422px;
+    grid-gap: 60px;
     .card__item{
        display: inline-block;
-        .card__img{
-            width: 440px;
-            height: 285px;
-        }
+        
         h3{
+            position: relative;
             margin: 25px 0px 21px;
             font-family: 'Forum';
             text-transform: uppercase;
             @include font(normal, normal, 32px, 35px, 5px, black);
+        }
+        h3::after{
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 47px;
+            height: 3px;
+            width: 300px;
+            background: #710707;
         }
         .subtitle{
             font-family: 'Roboto';
@@ -164,4 +190,268 @@ button{
         }
     }
 }
+}
+.Explore{
+    background: black;
+    .explore__container{
+        margin: 0, auto;
+        padding: 75px 0px;
+      
+
+
+        .explore__flex{
+            display: flex;
+            .explore__description{
+                margin-right: 60px;
+                .explore__title{
+                    position: relative;
+                    font-family:  'Forum';
+                    @include font(normal, normal, 80px, 90px, 5px, white); 
+                    text-transform: uppercase;
+                    margin-bottom: 100px;
+                }
+                .explore__title::after{
+                    top: 110px;
+                    left: 0px;
+                    content: '';
+                    position: absolute;
+                    height: 3px;
+                    width: 100%;
+                    background: #710707;
+            }
+            p{
+                font-family: 'Roboto', serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 38px;
+                color: #FFFFFF;
+                
+            }
+            }
+
+           
+        }
+    }
+    .explore__span{
+        color:#9d8665;
+    }
+}
+.Tickets{
+    background: rgb(0, 0, 0);
+    
+    .tickets__container{
+        padding: 75px 0px;
+.tickets__title{
+        position: relative;
+        font-family:  'Forum';
+        @include font(normal, normal, 80px, 90px, 5px, white); 
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+    .tickets__title::after{
+        top: 110px;
+        left: 0px;
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #710707;
+}
+.tickets__flex{
+    display: flex;
+    justify-content: space-between;
+   
+    .tickets__item1{
+        display: flex;
+        justify-content: space-between;
+        .radiobtn{
+            display: flex;
+        }
+        .amount{
+            .title{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 33px;
+                color: #FFFFFF;
+                margin-bottom: 11px;
+            }
+            .block__btn{
+                border: 3px solid white;
+                margin-bottom: 35px;
+                display: flex;
+                justify-content: space-around;
+            }
+                    .basic{
+                        .basic__btn{
+                            color: white;
+                            background: black;
+                            text-align: center;
+                            height: 50px;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                        .basic__subtitle{
+                            font-family:'Roboto', serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #FFFFFF;
+                            margin-bottom: 14px;
+                        }
+                    }
+                    .senior{
+                        .senior__subtitle{
+                            font-family:'Roboto', serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #FFFFFF;
+                            margin-bottom: 14px;
+                        }
+                        .senior__btn{
+                            color: white;
+                            background: black;
+                            text-align: center;
+                            height: 50px;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                    }
+            }
+        }
+        .ticket__type{
+            display: flex;
+            flex-direction: column;
+            margin-right: 240px;
+            p{
+                margin-bottom: 50px;
+                // font-family: 'Roboto',serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+            .radiobtn{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+            input{
+                margin-bottom: 50px;
+                margin-right: 23px;
+            }
+            :last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.price{
+    @include font(normal, bold, 28px, 33px, 1.65px, white); 
+    margin-bottom: 50px;
+}
+.btn__buy{
+    width: 175px;
+    height: 50px;
+    text-align: center;
+
+}
+}
+
+.Contacts{
+    padding: 75px 0px;
+
+    .contacts__container{
+        
+    
+.contacts__title{
+        position: relative;
+        font-family:  'Forum';
+        @include font(normal, normal, 80px, 90px, 5px, #9d8665); 
+        text-transform: uppercase;
+        margin-bottom: 83px;
+    }
+    .contacts__title::after{
+        top: 110px;
+        left: 0px;
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #710707;
+}
+}
+.contacts__flex{
+    display: flex;justify-content: space-between;
+    .contacts__text__title{
+        @include font(normal, 500, 28px, 33px, 0px, black); 
+        margin-bottom: 36px;
+        
+    }
+    .contacts__text__subtitle{
+        font-family: 'Roboto', serif;
+        @include font(normal, 300, 22px, 26px, 0px, black); 
+        p{
+            margin-bottom: 20px;
+        }
+
+    }
+}
+}
+.footer{
+    background: black;
+    
+   .footer__container{
+    padding: 75px 0px;
+     .footer__flex{
+         
+         display: flex;
+         justify-content: space-between;
+         .footer__flex__item{
+             
+            .contacts{
+                display: flex;
+                .contact__list{
+                    display: flex;
+                flex-direction: column;
+            }
+         }
+         
+         }
+         .footer__flex__item__social{
+            align-self: flex-end;
+         }
+     }
+        .logo{
+        
+            .logo__svg{
+                background-image: url(../images/svg/logo.svg);
+                width: 49px;
+                height: 26px;
+                display: inline-block;
+                margin-right: 20px;
+                
+        
+            }
+            .title{
+               @include font(normal, normal, 28px, 50px, 5px, white);
+               font-family: "Forum", cursive;
+    
+                text-transform: uppercase;
+                display: inline-block;
+            }
+        
+       }
+   }
 }
