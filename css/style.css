@@ -96,12 +96,12 @@ a:hover {
 .Welcome .img__main {
   position: absolute;
   top: -2px;
-  right: -23px;
+  right: -17px;
 }
 
 .Welcome .welcome__container .welcome__to__the__louvre {
   padding-top: 114px;
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .Welcome .welcome__container h1 {
@@ -129,31 +129,25 @@ a:hover {
 }
 
 .Welcome .welcome__container .discover__btn {
+  display: block;
   border-radius: 10px;
   background: #710707;
   width: 360px;
   height: 75px;
-}
-
-.Welcome .welcome__container .discover__btn .title__button {
   font-family: 'Roboto', serif;
   margin: 0px;
+  text-align: center;
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 2px;
   color: white;
+  padding-top: 21px;
 }
 
 .Welcome .welcome__container .discover__btn:hover {
   background: #9d8665;
-}
-
-.Welcome .backgroung__main {
-  position: absolute;
-  left: 465px;
-  top: -114px;
 }
 
 .Visiting {
@@ -203,7 +197,7 @@ a:hover {
 
 .visiting__container .card__grid .card__item h3 {
   position: relative;
-  margin: 25px 0px 26px;
+  margin: 25px 0px 7px;
   font-family: 'Forum';
   text-transform: uppercase;
   font-style: normal;
@@ -214,17 +208,18 @@ a:hover {
   color: black;
 }
 
-.visiting__container .card__grid h3::after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: 43px;
+.visiting__container .card__grid .card__item .line {
   height: 3px;
   width: 300px;
   background: #710707;
+  margin-bottom: 12px;
 }
 
-.visiting__container .card__grid .subtitle__virtual {
+.visiting__container .card__grid .card__item .hover__block:hover .line {
+  width: 100%;
+}
+
+.subtitle__virtual {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 200;
@@ -235,7 +230,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.visiting__container .card__grid .subtitle__street {
+.subtitle__street {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 200;
@@ -657,6 +652,10 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 153px;
+}
+
+.footer .footer__container .footer__flex .footer__flex__item .contacts .contact__list li a {
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
@@ -664,7 +663,6 @@ a:hover {
   letter-spacing: 2px;
   color: white;
   font-family: 'Roboto',serif;
-  margin-right: 153px;
 }
 
 .footer .footer__container .footer__flex .footer__flex__item .contacts :last-child {

@@ -9,6 +9,7 @@ a:active{
 a:hover{
     color: #9d8665;
 }
+
 @mixin font ( $fstyle, $fw, $fsize, $lh, $ls, $color) {
     font-style: $fstyle;
     font-weight: $fw;
@@ -85,13 +86,13 @@ a:hover{
     .img__main{
         position: absolute;
         top: -2px;
-        right: -23px;
+        right: -17px;
         
     }
     .welcome__container{
         .welcome__to__the__louvre{
             padding-top: 114px;
-            margin-left: 10px;
+            margin-left: 9px;
         }
       
 h1{
@@ -108,25 +109,22 @@ p{
 
 }
 .discover__btn{
+    display: block;
     border-radius: 10px;
     background: rgba(113, 7, 7, 1);
     width: 360px;
     height: 75px;
-    .title__button{
-        font-family: 'Roboto', serif;
-        margin: 0px;
-        @include font(normal, 200, 22px, 26px, 2px, white); 
-    }
+    font-family: 'Roboto', serif;
+    margin: 0px;
+    text-align: center;
+    @include font(normal, 200, 22px, 26px, 2px, white); 
+    padding-top: 21px;
+    
     
 }
 .discover__btn:hover{
     background: #9d8665;
 }
-    }
-    .backgroung__main{
-        position: absolute;
-        left: 465px;
-        top: -114px;
     }
 }
 
@@ -162,27 +160,30 @@ p{
     margin-left: 11px;
     .card__item{
        display: inline-block;
-        
         h3{
             position: relative;
-            margin: 25px 0px 26px;
+            margin: 25px 0px 7px;
             font-family: 'Forum';
             text-transform: uppercase;
             @include font(normal, normal, 32px, 35px, 5px, black);
         }
-        
-        }
-        h3::after{
-            content: '';
-            position: absolute;
-            left: 0px;
-            top: 43px;
+        .line{
             height: 3px;
             width: 300px;
             background: #710707;
+            margin-bottom: 12px;
+        }
+        .hover__block:hover .line{ 
+            width: 100%;
+        }
+        }
+       
+        }
         }
         
-        .subtitle__virtual, {
+     
+        
+        .subtitle__virtual{
             font-family: 'Roboto';
             @include font(normal, 200, 22px, 21px, 0px, black);
                 margin-bottom: 10px;
@@ -191,8 +192,8 @@ p{
             font-family: 'Roboto';
             @include font(normal, 200, 18px, 21px, 0px, black);
         }
-    }
-}
+    
+
 
 .Explore{
     padding: 75px 240px 90px;
@@ -493,12 +494,16 @@ p{
             .contacts{
                 display: flex;
                 .contact__list{
-                    display: flex;
+                display: flex;
                 flex-direction: column;
-                @include font(normal, 200, 22px, 56px, 2px, white);
-                font-family: 'Roboto',serif;
                 margin-right: 153px;
-
+                li{
+                    a{
+                        
+                        @include font(normal, 200, 22px, 56px, 2px, white);
+                        font-family: 'Roboto',serif;
+                    }
+                }
             }
             :last-child{
                 margin-right: 0px;
