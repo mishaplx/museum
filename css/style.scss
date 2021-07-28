@@ -234,6 +234,73 @@ margin-bottom: 76px;
         color:#9d8665;
     }
 }
+.Video{
+    .video__container{
+        padding: 75px 0px;
+        .video__info{
+            display: flex;
+            justify-content: space-between;
+            .video__title{
+                font-family: 'Forum';
+                text-transform: uppercase;
+                @include font(normal, 400 , 80px, 90px, 5px, #9D8665);
+            }
+            .video__subtitle{
+                @include font(normal, 300 , 22px, 38px, 0px, black);
+            }
+        }
+        .block__bar{
+            background: black;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 40px;
+            .bar__back{
+                background: black;
+            }
+            .progress {
+                background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+                border: solid 2px #82CFD0;
+                border-radius: 8px;
+                height: 7px;
+                width: 820px;
+                outline: none;
+                transition: background 450ms ease-in;
+                -webkit-appearance: none;
+              }
+              
+              .progress::-webkit-slider-thumb {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                -webkit-appearance: none;
+                cursor: ew-resize;
+                background: #434343;
+              }
+              .value__int {
+                background: linear-gradient(to right, #24809E 0%, #24809E 40%, #fff 40%, #fff 100%);
+                border: solid 2px #82CFD0;
+                border-radius: 8px;
+                height: 7px;
+                width: 155px;
+                outline: none;
+                transition: background 450ms ease-in;
+                -webkit-appearance: none;
+              }
+              
+              .value__int::-webkit-slider-thumb {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                -webkit-appearance: none;
+                cursor: ew-resize;
+                background: #434343;
+              }
+              
+        }
+    }
+}
 .Tickets{
     background: rgb(0, 0, 0);
     

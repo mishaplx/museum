@@ -127,7 +127,25 @@
             </div>
           </section>
           <section class="Video" id="video">
-            <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
+          <div class="video__container container">
+            <div class="video__img">
+              <img src="./images/Rectangle.png" alt="video">
+            </div>
+            <div class="block__bar">
+              <button class="bar__back"> <img src="./images/svg/back.svg" alt="left"> </button>
+              <button class="bar__back"> <img src="./images/svg/btn_play.svg" alt="play"> </button>
+              <button class="bar__back"> <img src="./images/svg/right.svg" alt="right"> </button>
+              <input type="range" value="40" min="0" max="100" step="1" class="progress">
+              <button class="bar__back"> <img src="./images/svg/value.svg" alt="value"></button>
+              <input type="range" value="40" min="0" max="100" step="1" class="value__int">
+              <button class="bar__back"> <img src="./images/svg/all.svg" alt="all"> </button>
+            </div>
+            <div class="video__info">
+              <h2 class="video__title">Video journey</h2>
+              <p class="video__subtitle">Enter and visit one of the most famous museums in the world and enjoy <br> masterpieces such as Mona Lisa or Hammurabi's Code </p>
+            </div>
+            
+          </div>
           </section>
           <section class="Tickets" id="tickets">
             <div class="tickets__container container">
@@ -242,5 +260,6 @@
       </footer>
     </div>
   </div>
+  <script src="./js/index.js"></script>
   </body>
 </html>
