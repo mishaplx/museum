@@ -19,20 +19,20 @@ a:hover{
 }
 .wrapper{
     max-width: 1920px;
+    margin: 0 auto;
 }
 .container{
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header{
-    max-height: 100%;
+    
     background-color: rgba(3, 3, 3, 1);
-    padding: 74px 0px;
+    padding: 74px 240px 76px;
     
     .header__container{
-        max-width: 1440px;
-        margin: 0px, auto;
+        width: 1440px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -78,18 +78,21 @@ a:hover{
     
 }
 .Welcome{
+    height: 750px;
     background: black;
-    padding-top: 114px;
     position: relative;
     
     .img__main{
         position: absolute;
         top: -2px;
-        right: 0px;
+        right: -23px;
         
     }
     .welcome__container{
-        margin-bottom: 75px;
+        .welcome__to__the__louvre{
+            padding-top: 114px;
+            margin-left: 10px;
+        }
       
 h1{
     position: relative;
@@ -101,16 +104,14 @@ h1{
 }
 p{
     @include font(normal, 300, 28px, 33px, 2px, white);
-margin-bottom: 76px;
+        margin-bottom: 80px;
 
 }
 .discover__btn{
-    border-radius: 3px;
+    border-radius: 10px;
     background: rgba(113, 7, 7, 1);
     width: 360px;
     height: 75px;
-    padding: 10px;
-    margin-bottom: 246px;
     .title__button{
         font-family: 'Roboto', serif;
         margin: 0px;
@@ -130,7 +131,7 @@ margin-bottom: 76px;
 }
 
 .Visiting{
-    padding-bottom: 75px;
+    padding: 75px 0px;
 }
 .visiting__container{
     
@@ -139,10 +140,11 @@ margin-bottom: 76px;
         font-family:  'Forum';
         @include font(normal, normal, 80px, 90px, 5px, #9D8665); 
         text-transform: uppercase;
-        margin-bottom: 100px;
+        margin-bottom: 105px;
+        margin-left: 12px;  
     }
     .visiting__title::after{
-        top: 110px;
+        top: 115px;
         left: 0px;
         content: '';
         position: absolute;
@@ -154,52 +156,52 @@ margin-bottom: 76px;
 .card__grid{
     display: grid;
     grid-template-rows: 422px ;
-    grid-template-columns: 422px 422px 422px;
-    grid-gap: 60px;
+    grid-template-columns: 440px 440px 440px;
+    column-gap: 60px;
+    row-gap: 78px;
+    margin-left: 11px;
     .card__item{
        display: inline-block;
         
         h3{
             position: relative;
-            margin: 25px 0px 21px;
+            margin: 25px 0px 26px;
             font-family: 'Forum';
             text-transform: uppercase;
             @include font(normal, normal, 32px, 35px, 5px, black);
+        }
+        
         }
         h3::after{
             content: '';
             position: absolute;
             left: 0px;
-            top: 47px;
+            top: 43px;
             height: 3px;
             width: 300px;
             background: #710707;
         }
-        .subtitle{
+        
+        .subtitle__virtual, {
             font-family: 'Roboto';
-            @include font(normal, 200, 22px, 26px, 0px, black);
-            p{
+            @include font(normal, 200, 22px, 21px, 0px, black);
                 margin-bottom: 10px;
-            }
-            :last-child{
-                margin: 0px;
-            }
+        }
+        .subtitle__street{
+            font-family: 'Roboto';
+            @include font(normal, 200, 18px, 21px, 0px, black);
         }
     }
 }
-}
+
 .Explore{
+    padding: 75px 240px 90px;
     background: black;
     .explore__container{
-        margin: 0, auto;
-        padding: 75px 0px;
-      
-
-
         .explore__flex{
             display: flex;
             .explore__description{
-                margin-right: 60px;
+                margin-right: 41px;
                 .explore__title{
                     position: relative;
                     font-family:  'Forum';
@@ -208,7 +210,7 @@ margin-bottom: 76px;
                     margin-bottom: 100px;
                 }
                 .explore__title::after{
-                    top: 110px;
+                    top: 115px;
                     left: 0px;
                     content: '';
                     position: absolute;
@@ -221,9 +223,9 @@ margin-bottom: 76px;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 22px;
-                line-height: 38px;
+                line-height: 38.9px;
                 color: #FFFFFF;
-                
+                margin-bottom: 25px;
             }
             }
 
@@ -236,7 +238,7 @@ margin-bottom: 76px;
 }
 .Video{
     .video__container{
-        padding: 75px 0px;
+        padding: 90px 0px 78px 11px;
         .video__info{
             display: flex;
             justify-content: space-between;
@@ -250,6 +252,7 @@ margin-bottom: 76px;
             }
         }
         .block__bar{
+            width: 1440px;
             background: black;
             height: 85px;
             display: flex;

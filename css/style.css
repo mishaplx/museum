@@ -13,22 +13,21 @@ a:hover {
 
 .wrapper {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .container {
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .header {
-  max-height: 100%;
   background-color: #030303;
-  padding: 74px 0px;
+  padding: 74px 240px 76px;
 }
 
 .header .header__container {
-  max-width: 1440px;
-  margin: 0px, auto;
+  width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,19 +88,20 @@ a:hover {
 }
 
 .Welcome {
+  height: 750px;
   background: black;
-  padding-top: 114px;
   position: relative;
 }
 
 .Welcome .img__main {
   position: absolute;
   top: -2px;
-  right: 0px;
+  right: -23px;
 }
 
-.Welcome .welcome__container {
-  margin-bottom: 75px;
+.Welcome .welcome__container .welcome__to__the__louvre {
+  padding-top: 114px;
+  margin-left: 10px;
 }
 
 .Welcome .welcome__container h1 {
@@ -125,16 +125,14 @@ a:hover {
   line-height: 33px;
   letter-spacing: 2px;
   color: white;
-  margin-bottom: 76px;
+  margin-bottom: 80px;
 }
 
 .Welcome .welcome__container .discover__btn {
-  border-radius: 3px;
+  border-radius: 10px;
   background: #710707;
   width: 360px;
   height: 75px;
-  padding: 10px;
-  margin-bottom: 246px;
 }
 
 .Welcome .welcome__container .discover__btn .title__button {
@@ -159,7 +157,7 @@ a:hover {
 }
 
 .Visiting {
-  padding-bottom: 75px;
+  padding: 75px 0px;
 }
 
 .visiting__container .visiting__title {
@@ -172,11 +170,12 @@ a:hover {
   letter-spacing: 5px;
   color: #9D8665;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 105px;
+  margin-left: 12px;
 }
 
 .visiting__container .visiting__title::after {
-  top: 110px;
+  top: 115px;
   left: 0px;
   content: '';
   position: absolute;
@@ -190,9 +189,12 @@ a:hover {
   display: grid;
   -ms-grid-rows: 422px;
       grid-template-rows: 422px;
-  -ms-grid-columns: 422px 422px 422px;
-      grid-template-columns: 422px 422px 422px;
-  grid-gap: 60px;
+  -ms-grid-columns: 440px 440px 440px;
+      grid-template-columns: 440px 440px 440px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 78px;
+  margin-left: 11px;
 }
 
 .visiting__container .card__grid .card__item {
@@ -201,7 +203,7 @@ a:hover {
 
 .visiting__container .card__grid .card__item h3 {
   position: relative;
-  margin: 25px 0px 21px;
+  margin: 25px 0px 26px;
   font-family: 'Forum';
   text-transform: uppercase;
   font-style: normal;
@@ -212,41 +214,40 @@ a:hover {
   color: black;
 }
 
-.visiting__container .card__grid .card__item h3::after {
+.visiting__container .card__grid h3::after {
   content: '';
   position: absolute;
   left: 0px;
-  top: 47px;
+  top: 43px;
   height: 3px;
   width: 300px;
   background: #710707;
 }
 
-.visiting__container .card__grid .card__item .subtitle {
+.visiting__container .card__grid .subtitle__virtual {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.visiting__container .card__grid .subtitle__street {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
   letter-spacing: 0px;
   color: black;
 }
 
-.visiting__container .card__grid .card__item .subtitle p {
-  margin-bottom: 10px;
-}
-
-.visiting__container .card__grid .card__item .subtitle :last-child {
-  margin: 0px;
-}
-
 .Explore {
+  padding: 75px 240px 90px;
   background: black;
-}
-
-.Explore .explore__container {
-  margin: 0, auto;
-  padding: 75px 0px;
 }
 
 .Explore .explore__container .explore__flex {
@@ -256,7 +257,7 @@ a:hover {
 }
 
 .Explore .explore__container .explore__flex .explore__description {
-  margin-right: 60px;
+  margin-right: 41px;
 }
 
 .Explore .explore__container .explore__flex .explore__description .explore__title {
@@ -273,7 +274,7 @@ a:hover {
 }
 
 .Explore .explore__container .explore__flex .explore__description .explore__title::after {
-  top: 110px;
+  top: 115px;
   left: 0px;
   content: '';
   position: absolute;
@@ -287,8 +288,9 @@ a:hover {
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
-  line-height: 38px;
+  line-height: 38.9px;
   color: #FFFFFF;
+  margin-bottom: 25px;
 }
 
 .Explore .explore__span {
@@ -296,7 +298,7 @@ a:hover {
 }
 
 .Video .video__container {
-  padding: 75px 0px;
+  padding: 90px 0px 78px 11px;
 }
 
 .Video .video__container .video__info {
@@ -329,6 +331,7 @@ a:hover {
 }
 
 .Video .video__container .block__bar {
+  width: 1440px;
   background: black;
   height: 85px;
   display: -webkit-box;
