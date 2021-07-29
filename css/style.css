@@ -1,6 +1,7 @@
 @import url(../css/nullstyle.css);
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 1920px;
 }
 
 a:active {
@@ -12,8 +13,7 @@ a:hover {
 }
 
 .wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 1920px;
 }
 
 .container {
@@ -27,7 +27,6 @@ a:hover {
 }
 
 .header .header__container {
-  width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +36,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
 }
 
 .header .logo .logo__svg {
@@ -95,18 +93,17 @@ a:hover {
 
 .Welcome .img__main {
   position: absolute;
-  top: -2px;
-  right: -17px;
+  top: 0px;
+  right: 0px;
 }
 
 .Welcome .welcome__container .welcome__to__the__louvre {
   padding-top: 114px;
-  margin-left: 9px;
 }
 
 .Welcome .welcome__container h1 {
   position: relative;
-  font-family: 'Forum', cursive;
+  font-family: "Forum", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
@@ -134,8 +131,7 @@ a:hover {
   background: #710707;
   width: 360px;
   height: 75px;
-  font-family: 'Roboto', serif;
-  margin: 0px;
+  font-family: "Roboto", serif;
   text-align: center;
   font-style: normal;
   font-weight: 200;
@@ -143,7 +139,7 @@ a:hover {
   line-height: 26px;
   letter-spacing: 2px;
   color: white;
-  padding-top: 21px;
+  padding-top: 23px;
 }
 
 .Welcome .welcome__container .discover__btn:hover {
@@ -156,22 +152,21 @@ a:hover {
 
 .visiting__container .visiting__title {
   position: relative;
-  font-family: 'Forum';
+  font-family: "Forum";
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
-  color: #9D8665;
+  color: #9d8665;
   text-transform: uppercase;
   margin-bottom: 105px;
-  margin-left: 12px;
 }
 
 .visiting__container .visiting__title::after {
   top: 115px;
   left: 0px;
-  content: '';
+  content: "";
   position: absolute;
   height: 3px;
   width: 100%;
@@ -188,7 +183,6 @@ a:hover {
   -webkit-column-gap: 60px;
           column-gap: 60px;
   row-gap: 78px;
-  margin-left: 11px;
 }
 
 .visiting__container .card__grid .card__item {
@@ -197,8 +191,8 @@ a:hover {
 
 .visiting__container .card__grid .card__item h3 {
   position: relative;
-  margin: 25px 0px 7px;
-  font-family: 'Forum';
+  margin: 25px 0px 8px;
+  font-family: "Forum";
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
@@ -220,18 +214,18 @@ a:hover {
 }
 
 .subtitle__virtual {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
   line-height: 21px;
   letter-spacing: 0px;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .subtitle__street {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 200;
   font-size: 18px;
@@ -241,7 +235,7 @@ a:hover {
 }
 
 .Explore {
-  padding: 75px 240px 90px;
+  padding: 75px 240px;
   background: black;
 }
 
@@ -257,7 +251,7 @@ a:hover {
 
 .Explore .explore__container .explore__flex .explore__description .explore__title {
   position: relative;
-  font-family: 'Forum';
+  font-family: "Forum";
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
@@ -271,7 +265,7 @@ a:hover {
 .Explore .explore__container .explore__flex .explore__description .explore__title::after {
   top: 115px;
   left: 0px;
-  content: '';
+  content: "";
   position: absolute;
   height: 3px;
   width: 100%;
@@ -279,21 +273,35 @@ a:hover {
 }
 
 .Explore .explore__container .explore__flex .explore__description p {
-  font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 38.9px;
-  color: #FFFFFF;
-  margin-bottom: 25px;
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+
+.Explore .explore__container .restavtare {
+  margin-top: 14px;
 }
 
 .Explore .explore__span {
   color: #9d8665;
 }
 
+.Video .video__img {
+  position: relative;
+}
+
+.Video .video__img .play__big {
+  position: absolute;
+  top: 206px;
+  left: 609px;
+  background: none;
+}
+
 .Video .video__container {
-  padding: 90px 0px 78px 11px;
+  padding: 90px 0px 78px;
 }
 
 .Video .video__container .video__info {
@@ -306,14 +314,14 @@ a:hover {
 }
 
 .Video .video__container .video__info .video__title {
-  font-family: 'Forum';
+  font-family: "Forum";
   text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
-  color: #9D8665;
+  color: #9d8665;
 }
 
 .Video .video__container .video__info .video__subtitle {
@@ -321,8 +329,9 @@ a:hover {
   font-weight: 300;
   font-size: 22px;
   line-height: 38px;
-  letter-spacing: 0px;
+  letter-spacing: 0.4px;
   color: black;
+  margin-top: 7px;
 }
 
 .Video .video__container .block__bar {
@@ -344,10 +353,26 @@ a:hover {
   background: black;
 }
 
+.Video .video__container .block__bar .play__left {
+  margin-left: 23px;
+}
+
+.Video .video__container .block__bar .play__right {
+  margin-left: 8px;
+}
+
+.Video .video__container .block__bar .value {
+  margin-left: 8px;
+}
+
+.Video .video__container .block__bar .fullscreen {
+  margin-right: 22px;
+}
+
 .Video .video__container .block__bar .progress {
-  background: -webkit-gradient(linear, left top, right top, from(#82CFD0), color-stop(40%, #82CFD0), color-stop(40%, #fff), to(#fff));
-  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
-  border: solid 2px #82CFD0;
+  background: -webkit-gradient(linear, left top, right top, from(#82cfd0), color-stop(40%, #82cfd0), color-stop(40%, #fff), to(#fff));
+  background: linear-gradient(to right, #82cfd0 0%, #82cfd0 40%, #fff 40%, #fff 100%);
+  border: solid 2px #82cfd0;
   border-radius: 8px;
   height: 7px;
   width: 820px;
@@ -367,9 +392,9 @@ a:hover {
 }
 
 .Video .video__container .block__bar .value__int {
-  background: -webkit-gradient(linear, left top, right top, from(#24809E), color-stop(40%, #24809E), color-stop(40%, #fff), to(#fff));
-  background: linear-gradient(to right, #24809E 0%, #24809E 40%, #fff 40%, #fff 100%);
-  border: solid 2px #82CFD0;
+  background: -webkit-gradient(linear, left top, right top, from(#24809e), color-stop(40%, #24809e), color-stop(40%, #fff), to(#fff));
+  background: linear-gradient(to right, #24809e 0%, #24809e 40%, #fff 40%, #fff 100%);
+  border: solid 2px #82cfd0;
   border-radius: 8px;
   height: 7px;
   width: 155px;
@@ -398,7 +423,7 @@ a:hover {
 
 .Tickets .tickets__container .tickets__title {
   position: relative;
-  font-family: 'Forum';
+  font-family: "Forum";
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
@@ -412,7 +437,7 @@ a:hover {
 .Tickets .tickets__container .tickets__title::after {
   top: 110px;
   left: 0px;
-  content: '';
+  content: "";
   position: absolute;
   height: 3px;
   width: 100%;
@@ -444,22 +469,28 @@ a:hover {
 }
 
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .title {
+  text-align: right;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: #FFFFFF;
-  margin-bottom: 11px;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .block__btn {
   border: 3px solid white;
-  margin-bottom: 35px;
+  max-width: 150px;
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.Tickets .tickets__container .tickets__flex .tickets__item1 .amount .basic {
+  margin-bottom: 30px;
 }
 
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .basic .basic__btn {
@@ -474,22 +505,27 @@ a:hover {
 }
 
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .basic .basic__subtitle {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
+  margin-left: 24px;
+}
+
+.Tickets .tickets__container .tickets__flex .tickets__item1 .amount .senior {
+  margin-bottom: 46px;
 }
 
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .senior .senior__subtitle {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
 }
 
@@ -521,7 +557,7 @@ a:hover {
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .Tickets .tickets__container .tickets__flex .ticket__type .radiobtn {
@@ -529,7 +565,7 @@ a:hover {
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .Tickets .tickets__container .tickets__flex .ticket__type input {
@@ -549,6 +585,7 @@ a:hover {
   letter-spacing: 1.65px;
   color: white;
   margin-bottom: 50px;
+  text-align: right;
 }
 
 .Tickets .btn__buy {
@@ -567,7 +604,7 @@ a:hover {
 
 .Contacts .contacts__container .contacts__title {
   position: relative;
-  font-family: 'Forum';
+  font-family: "Forum";
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
@@ -575,13 +612,13 @@ a:hover {
   letter-spacing: 5px;
   color: #9d8665;
   text-transform: uppercase;
-  margin-bottom: 83px;
+  margin-bottom: 105px;
 }
 
 .Contacts .contacts__container .contacts__title::after {
-  top: 110px;
+  top: 116px;
   left: 0px;
-  content: '';
+  content: "";
   position: absolute;
   height: 3px;
   width: 100%;
@@ -608,7 +645,7 @@ a:hover {
 }
 
 .Contacts .contacts__flex .contacts__text__subtitle {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -621,12 +658,16 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.Contacts .contacts__flex .contacts__text {
+  margin-top: 12px;
+}
+
 .footer {
   background: black;
 }
 
 .footer .footer__container {
-  padding: 75px 0px;
+  padding: 75px 0px 60px;
 }
 
 .footer .footer__container .footer__flex {
@@ -662,7 +703,7 @@ a:hover {
   line-height: 56px;
   letter-spacing: 2px;
   color: white;
-  font-family: 'Roboto',serif;
+  font-family: "Roboto", serif;
 }
 
 .footer .footer__container .footer__flex .footer__flex__item .contacts :last-child {
@@ -675,11 +716,11 @@ a:hover {
 }
 
 .footer .footer__container .footer__flex .footer__flex__item__social .social a {
-  margin-right: 24px;
+  margin-right: 20px;
 }
 
 .footer .footer__container .footer__flex .footer__flex__item__social .social :last-child {
-  margin-right: 24px;
+  margin-right: 0px;
 }
 
 .footer .footer__container .logo .logo__svg {
