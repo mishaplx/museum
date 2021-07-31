@@ -169,7 +169,7 @@ a:hover {
 }
 
 .Explore {
-  padding: 75px 240px;
+  padding: 73px 240px;
   background: black;
   .explore__container {
     .explore__flex {
@@ -222,7 +222,7 @@ a:hover {
   }
 
   .video__container {
-    padding: 90px 0px 78px;
+    padding: 87px 0px 78px;
     .video__info {
       display: flex;
       justify-content: space-between;
@@ -316,7 +316,7 @@ a:hover {
   background: rgb(0, 0, 0);
 
   .tickets__container {
-    padding: 75px 0px;
+    padding: 76px 0px;
     .tickets__title {
       position: relative;
       font-family: "Forum";
@@ -336,13 +336,10 @@ a:hover {
     .tickets__flex {
       display: flex;
       justify-content: space-between;
-
       .tickets__item1 {
         display: flex;
         justify-content: space-between;
-        .radiobtn {
-          display: flex;
-        }
+        
         .amount {
           .title {
             text-align: right;
@@ -358,6 +355,7 @@ a:hover {
             max-width: 150px;
             text-align: left;
             display: flex;
+            margin-left: 40px;
             justify-content: space-around;
           }
           .basic {
@@ -393,6 +391,7 @@ a:hover {
               line-height: 26px;
               color: #ffffff;
               margin-bottom: 14px;
+              margin-left: 24px;
             }
             .senior__btn {
               color: white;
@@ -412,7 +411,7 @@ a:hover {
         flex-direction: column;
         margin-right: 240px;
         p {
-          margin-bottom: 50px;
+          margin-bottom: 56px;
           // font-family: 'Roboto',serif;
           font-style: normal;
           font-weight: bold;
@@ -420,12 +419,50 @@ a:hover {
           line-height: 33px;
           color: #ffffff;
         }
+        .radio__label{
+          padding-left: 39px;
+        }
+      
+        .radio__label::before{
+          content: "";
+          display: block;
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          border: 1px solid #000;
+          border-radius: 50%;
+        background-color: #fff;
+        }
+        .radio__label::after{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          z-index: 2;
+          width: 11px;
+          height: 11px;
+          border: 1px solid rgb(0, 0, 0);
+          border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        }
+        .style__radio:checked +  .radio__label::after{
+
+          background-color: #fff;
+          border: 2px solid #000;
+        }
         .radiobtn {
+          position: relative;
           font-style: normal;
           font-weight: 300;
           font-size: 22px;
           line-height: 26px;
           color: #ffffff;
+          margin-bottom: 49px;
+          .style__radio{
+            appearance: none;
+            position: absolute;
+          }
         }
         input {
           margin-bottom: 50px;
@@ -446,6 +483,15 @@ a:hover {
     width: 175px;
     height: 50px;
     text-align: center;
+    background: white;
+  .text__btn__buy{
+    color: black;
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  }
   }
   .btn__buy:hover {
     background: #9d8665;
@@ -502,6 +548,7 @@ a:hover {
       justify-content: space-between;
       .footer__flex__item {
         .contacts {
+          margin-right: 252px;
           display: flex;
           .contact__list {
             display: flex;
@@ -522,6 +569,7 @@ a:hover {
       .footer__flex__item__social {
         align-self: flex-end;
         .social {
+          margin-bottom: 32px;
           a {
             margin-right: 20px;
           }

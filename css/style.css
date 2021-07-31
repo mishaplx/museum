@@ -235,7 +235,7 @@ a:hover {
 }
 
 .Explore {
-  padding: 75px 240px;
+  padding: 73px 240px;
   background: black;
 }
 
@@ -301,7 +301,7 @@ a:hover {
 }
 
 .Video .video__container {
-  padding: 90px 0px 78px;
+  padding: 87px 0px 78px;
 }
 
 .Video .video__container .video__info {
@@ -418,7 +418,7 @@ a:hover {
 }
 
 .Tickets .tickets__container {
-  padding: 75px 0px;
+  padding: 76px 0px;
 }
 
 .Tickets .tickets__container .tickets__title {
@@ -462,12 +462,6 @@ a:hover {
           justify-content: space-between;
 }
 
-.Tickets .tickets__container .tickets__flex .tickets__item1 .radiobtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .title {
   text-align: right;
   font-style: normal;
@@ -485,6 +479,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 40px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -527,6 +522,7 @@ a:hover {
   line-height: 26px;
   color: #ffffff;
   margin-bottom: 14px;
+  margin-left: 24px;
 }
 
 .Tickets .tickets__container .tickets__flex .tickets__item1 .amount .senior .senior__btn {
@@ -552,7 +548,7 @@ a:hover {
 }
 
 .Tickets .tickets__container .tickets__flex .ticket__type p {
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -560,12 +556,55 @@ a:hover {
   color: #ffffff;
 }
 
+.Tickets .tickets__container .tickets__flex .ticket__type .radio__label {
+  padding-left: 39px;
+}
+
+.Tickets .tickets__container .tickets__flex .ticket__type .radio__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.Tickets .tickets__container .tickets__flex .ticket__type .radio__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.Tickets .tickets__container .tickets__flex .ticket__type .style__radio:checked + .radio__label::after {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
 .Tickets .tickets__container .tickets__flex .ticket__type .radiobtn {
+  position: relative;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  margin-bottom: 49px;
+}
+
+.Tickets .tickets__container .tickets__flex .ticket__type .radiobtn .style__radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
 }
 
 .Tickets .tickets__container .tickets__flex .ticket__type input {
@@ -592,6 +631,16 @@ a:hover {
   width: 175px;
   height: 50px;
   text-align: center;
+  background: white;
+}
+
+.Tickets .btn__buy .text__btn__buy {
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .Tickets .btn__buy:hover {
@@ -680,6 +729,7 @@ a:hover {
 }
 
 .footer .footer__container .footer__flex .footer__flex__item .contacts {
+  margin-right: 252px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,6 +763,10 @@ a:hover {
 .footer .footer__container .footer__flex .footer__flex__item__social {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.footer .footer__container .footer__flex .footer__flex__item__social .social {
+  margin-bottom: 32px;
 }
 
 .footer .footer__container .footer__flex .footer__flex__item__social .social a {
